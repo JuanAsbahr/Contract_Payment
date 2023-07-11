@@ -17,6 +17,11 @@ namespace Contract_Payment.Entities
             TotalValue = totalValue;
             Installments = new List<Installment>();
         }
+
+        internal void AddInstallment(Installment installment)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public void AddInstallment(Installment installment)
