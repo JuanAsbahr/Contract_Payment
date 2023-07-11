@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Concurrent;
+using System.Collections.Generic;
 
 namespace Contract_Payment.Entities
 {
@@ -17,5 +17,10 @@ namespace Contract_Payment.Entities
             TotalValue = totalValue;
             Installments = new List<Installment>();
         }
+    }
+
+    public void AddInstallment(Installment installment)
+    {
+        Installment.Add(installment);
     }
 }
